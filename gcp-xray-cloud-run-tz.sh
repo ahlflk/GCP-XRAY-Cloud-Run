@@ -55,8 +55,6 @@ show_emojis() {
     EMOJI_INFO="💡"     # General Information
     EMOJI_SELECT="👉"    # Selection/Input Indicator
     EMOJI_SPINNER="⏳"  # For Spinner
-    EMOJI_START="⏰"   # For Start Time
-    EMOJI_END="⌛"   # For End Time
 }
 
 # Time Zone Function
@@ -567,8 +565,8 @@ show_config_summary() {
     
     # --- TimeFrame Summary ---
     header "⏳ Deployment TimeFrame (Asia/Yangon)"
-    printf "${CYAN}${BOLD}%-20s${NC} %s\n" " Start Time:"       "$START_LOCAL"
-    printf "${CYAN}${BOLD}%-20s${NC} %s\n" " End Time:"     "$END_LOCAL (5 hours)"
+    printf "${CYAN}${BOLD}%-20s${NC} %s\n" "Start Time:"       "$START_LOCAL"
+    printf "${CYAN}${BOLD}%-20s${NC} %s\n" "End Time:"     "$END_LOCAL (5 hours)"
     echo
     
     # --- FIXED INPUT LOOP START ---
@@ -820,7 +818,7 @@ deploy_to_cloud_run() {
 
 • <b>⌛ End:</b> ${END_LOCAL}
 
-<b>🔗 VLESS Sharelink:</b>
+<b>🔗 Share Link:</b>
 
 <code>${share_link}</code>
 
@@ -901,7 +899,8 @@ show_emojis
 # Run user input functions in specified order
 run_user_inputs() {
     header "🚀 GCP Cloud Run XRay Deployment"
-    initialize_time_variables # FIX: Initialize time variables first    
+    initialize_time_variables # FIX: Initialize time variables first
+    
     # 1. V2Ray Config (Calls all internally in sequence)
     select_v2ray_config
     
