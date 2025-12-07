@@ -1,4 +1,4 @@
-# 🚀 GCP-V2RAY: Xray Deployment on Google Cloud Run (VLESS/Trojan)
+# 🚀 GCP-XRAY: Xray Deployment on Google Cloud Run (VLESS/Trojan)
 
 This repository contains the necessary files and a deployment script to easily run an Xray proxy service (supporting VLESS and Trojan) on Google Cloud Run. The setup leverages Cloud Run's built-in TLS/SSL features, keeping the container configuration simple and secure.
 
@@ -30,10 +30,10 @@ This repository contains the necessary files and a deployment script to easily r
 
 Clone this repository and give execution permission to the deployment script.
 
-git clone [https://github.com/ahlflk/GCP-V2RAY-Cloud-Run.git](https://github.com/ahlflk/GCP-V2RAY-Cloud-Run.git)
+git clone [https://github.com/ahlflk/GCP-XRAY-Cloud-Run.git](https://github.com/ahlflk/GCP-XRAY-Cloud-Run.git)
 
-cd GCP-V2RAY-Cloud-Run
-chmod +x GCP-V2RAY-Cloud-Run.sh
+cd GCP-XRAY-Cloud-Run
+chmod +x GCP-XRAY-Cloud-Run.sh
 
 ## License
 MIT License. Use at your own risk.
@@ -50,10 +50,9 @@ Made with ❤️ by [AHLFLK2025channel](https://t.me/AHLFLK2025channel)
 
 ---
 
-## 🚀 Cloud Run One-Click GCP-V2RAY-Cloud-Run
+## 🚀 Cloud Run One-Click GCP-XRAY-Cloud-Run
 
 Run this script directly in **Google Cloud Shell**:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/ahlflk/GCP-V2RAY-Cloud-Run/refs/heads/main/gcp-v2ray-cloud-run.sh)
-
+bash <(curl -Ls https://raw.githubusercontent.com/ahlflk/GCP-XRAY-Cloud-Run/refs/heads/main/gcp-xray-cloud-run.sh)
